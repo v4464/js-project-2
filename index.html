@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Booking App</title>
+</head>
+<body>
+  <h1>Movie Booking App</h1>
+  <label for="findSeat">Find Seat:</label>
+  <input type="number" id="findSeat" min="1">
+  <button onclick="findSeat()">Find</button>
+  <form id="bookingForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+    <label for="seatNumber">Seat Number:</label>
+    <input type="number" id="seatNumber" min="1" required>
+    <button type="submit">Book Seat</button>
+  </form>
+  <h2 id="totalSeatsHeader"></h2>
+  <h3>Booked Seats:</h3>
+  <ul id="userList"></ul>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
